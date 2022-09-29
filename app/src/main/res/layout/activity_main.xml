@@ -30,18 +30,19 @@
         app:layout_constraintVertical_bias="1.0">
 
         <LinearLayout
+            android:id="@+id/sheet"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
             <androidx.cardview.widget.CardView
                 android:id="@+id/PlasticCard"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_marginStart="10dp"
-                android:background="#733535"
                 android:clickable="true"
                 app:cardElevation="0dp">
 
@@ -55,7 +56,7 @@
                         android:id="@+id/plasticImage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/plastic_50" />
+                        app:srcCompat="@drawable/is_disable_plastic_50" />
 
                     <TextView
                         android:id="@+id/plasticText"
@@ -87,7 +88,7 @@
                         android:id="@+id/glassImage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/glass_50" />
+                        app:srcCompat="@drawable/is_disable_glass_50" />
 
                     <TextView
                         android:id="@+id/glassText"
@@ -119,7 +120,7 @@
                         android:id="@+id/metalImage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/metal_50" />
+                        app:srcCompat="@drawable/is_disable_metal_50" />
 
                     <TextView
                         android:id="@+id/metalText"
@@ -151,7 +152,7 @@
                         android:id="@+id/lightImage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/light_50" />
+                        app:srcCompat="@drawable/is_disable_light_50" />
 
                     <TextView
                         android:id="@+id/lightText"
@@ -183,7 +184,7 @@
                         android:id="@+id/batteryImage"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/battery_50" />
+                        app:srcCompat="@drawable/is_disable_battery_50" />
 
                     <TextView
                         android:id="@+id/batteryText"
@@ -215,7 +216,7 @@
                         android:id="@+id/clothesImage"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        app:srcCompat="@drawable/clothes_50" />
+                        app:srcCompat="@drawable/is_disable_clothes_50" />
 
                     <TextView
                         android:id="@+id/clothesText"
